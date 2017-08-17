@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="New Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@color/title_label_color"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:id="@+id/imgBack"
+            android:padding="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperate_color" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/txtReceiver"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_color"
+            android:hint="To:"
+            android:layout_toLeftOf="@+id/imgAdd" />
+
+        <ImageView
+            app:srcCompat="@drawable/ic_add_user"
+            android:id="@+id/imgAdd"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="9dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/txtSubject"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_color"
+            android:hint="Subject:" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="200dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/txtMessage"
+            android:hint="Message"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/imgAttach"/>
+
+        <ImageView
+            app:srcCompat="@drawable/ic_attach"
+            android:id="@+id/imgAttach"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:text="Send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtSend"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="17sp"
+            android:textColor="@color/login_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

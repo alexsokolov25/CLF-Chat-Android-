@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CLF-Chat</string>
+
+    <string name="category_prompt">Choose a country</string>
+
+    <string-array name="category_arrays">
+        <item>Concierge</item>
+        <item>Restaurant/Company</item>
+        <item>Consumer</item>
+    </string-array>
+</resources>

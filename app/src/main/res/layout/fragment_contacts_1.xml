@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tabView">
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_add_user1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgTab"
+            android:layout_toLeftOf="@+id/imgAdd"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabView"
+        android:id="@+id/myGroupLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myGroupList" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/allContactsLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#EAEAEA"
+                android:layout_toLeftOf="@+id/imgSwitch"
+                android:id="@+id/searchView"
+                android:layout_marginRight="7dp" />
+
+            <ImageView
+                android:id="@+id/imgSwitch"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/lblSort"
+                android:layout_centerVertical="true"
+                android:layout_width="60dp"
+                android:layout_marginRight="7dp" />
+
+            <TextView
+                android:text="Sort by Company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblSort"
+                android:textSize="12sp"
+                android:textColor="@color/title_label_color"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contactsList"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+</RelativeLayout>

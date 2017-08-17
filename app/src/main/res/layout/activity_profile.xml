@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="User Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@color/title_label_color"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:id="@+id/imgBack"
+            android:padding="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperate_color" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user_example"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="25dp" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/lblFullName"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_color"
+            android:text="Jennifer Tomy" />
+
+        <ImageView
+            app:srcCompat="@drawable/right_arrow_1"
+            android:id="@+id/imageView4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_color"
+            android:text="jtomy@conciergelivefeed.com" />
+
+        <ImageView
+            app:srcCompat="@drawable/right_arrow_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_color"
+            android:text="310-555-1235" />
+
+        <ImageView
+            app:srcCompat="@drawable/right_arrow_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="Company: Cosmopolitan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/title_label_color"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Username: jtomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/title_label_color"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Password: xxxxxxxxx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/title_label_color"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:textSize="17sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/login_color"
+        android:text="Change Password"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
